@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Atividades</title>
+
+</head>
+
+<body id="atividade">
+    <header class="container-fluid">
+        <div class="row">
+            <logo class="col-md-9"> <h1>Health Track</h1></logo>
+        </div>  
+    </header> 
+    <main>
+        <div class="container-fluid">
+            <h2 class="offset-sm-1">Atividades</h2>
+            <h4 class="offset-sm-2">Adicionar atividade:</h4>
+        </div>
+            <form class="form-padrao">
+                <div class="row mb-3">
+                    <label class="control-label col-sm-1 offset-sm-2" for="text">Títudo da Atividade: </label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="texto" placeholder="Informe o exercício feito"/>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="control-label col-sm-1 offset-sm-2" for="text">Tipo da Atividade: </label>
+                    <div class="col-sm-6">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Escolha  sua atividade  </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Aeróbica</a></li>
+                            <li><a class="dropdown-item" href="#">Artes Marciais</a></li>
+                            <li><a class="dropdown-item" href="#">Basquete</a></li>
+                            <li><a class="dropdown-item" href="#">Bicicleta</a></li>
+                            <li><a class="dropdown-item" href="#">Boxe</a></li>
+                            <li><a class="dropdown-item" href="#">Caminhada</a></li>
+                            <li><a class="dropdown-item" href="#">Caminhada na esteira</a></li>
+                            <li><a class="dropdown-item" href="#">Ciclismo</a></li>
+                            <li><a class="dropdown-item" href="#">Corrida</a></li>
+                            <li><a class="dropdown-item" href="#">Crossfit</a></li>
+                            <li><a class="dropdown-item" href="#">Dança</a></li>
+                            <li><a class="dropdown-item" href="#">Futebol</a></li>
+                            <li><a class="dropdown-item" href="#">Futebol americano</a></li>
+                            <li><a class="dropdown-item" href="#">Ginástica</a></li>
+                            <li><a class="dropdown-item" href="#">Golfe</a></li>
+                            <li><a class="dropdown-item" href="#">Handebol</a></li>
+                            <li><a class="dropdown-item" href="#">Hidroginástica</a></li>
+                            <li><a class="dropdown-item" href="#">Hipismo</a></li>
+                            <li><a class="dropdown-item" href="#">Iatismo</a></li>
+                            <li><a class="dropdown-item" href="#">Ioga</a></li>
+                            <li><a class="dropdown-item" href="#">Meditação</a></li>
+                            <li><a class="dropdown-item" href="#">Mergulho</a></li>
+                            <li><a class="dropdown-item" href="#">Mountain bile</a></li>
+                            <li><a class="dropdown-item" href="#">Musculação</a></li>
+                            <li><a class="dropdown-item" href="#">Natação</a></li>
+                            <li><a class="dropdown-item" href="#">Outra</a></li>
+                            <li><a class="dropdown-item" href="#">Pilates</a></li>
+                            <li><a class="dropdown-item" href="#">Pular corda</a></li>
+                            <li><a class="dropdown-item" href="#">Polo aquático</a></li>
+                            <li><a class="dropdown-item" href="#">Remo</a></li>
+                            <li><a class="dropdown-item" href="#">Skate</a></li>
+                            <li><a class="dropdown-item" href="#">Spinning</a></li>
+                            <li><a class="dropdown-item" href="#">Surfe</a></li>
+                            <li><a class="dropdown-item" href="#">Tênis</a></li>
+                            <li><a class="dropdown-item" href="#">Treino em circuito</a></li>
+                            <li><a class="dropdown-item" href="#">Treino intervalado</a></li>
+                            <li><a class="dropdown-item" href="#">Trilha</a></li>
+                            <li><a class="dropdown-item" href="#">Volei</a></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="control-label col-sm-1 offset-sm-2" for="date">Data: </label>
+                    <div class="col-sm-2">
+                        <input type="date" class="form-control" id="date" />
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="control-label col-sm-1 offset-sm-2" for="hora">Início: </label>
+                    <div class="col-sm-2">
+                        <input type="time" class="form-control" id="time" placeholder="Informe o início da atividade" />
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="control-label col-sm-1 offset-sm-2" for="hora">Término: </label>
+                    <div class="col-sm-2">
+                        <input type="time" class="form-control" id="time" placeholder="Informe o fim da atividade" />
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="control-label col-sm-1 offset-sm-2" for="text">Intensidade: </label>
+                    <div class="col-sm-6">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Registre a intensidade</button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Suave</a></li>
+                            <li><a class="dropdown-item" href="#">Moderada</a></li>
+                            <li><a class="dropdown-item" href="#">Intensa</a></li>
+                            <li><a class="dropdown-item" href="#">Muito intensa</a></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="control-label col-sm-1 offset-sm-2" for="obs">Observações: </label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="obs"/>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-2 offset-sm-3">
+                        <button type="submit" class="btn btn-primary">
+                        Enviar
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="col-md-8 offset-sm-5">
+                <button type="button" class="btn btn-link">Ver Diário de Atividades</button>
+            </div> 
+
+        </div>
+
+    </main>
+    <footer id="footer" class="container-fluid">
+        <div class="row">
+            <section class="col-md-1 offset-sm-10"> <a href="./atividade.html"><h6>Topo</h6> </a> </section>
+            <section class="col-md-1"> <a href="./home.html"><h6>Home</h6> </a> </section>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>
